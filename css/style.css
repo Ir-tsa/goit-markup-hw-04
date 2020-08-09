@@ -348,23 +348,6 @@ img {
   margin-bottom: 16px;
 }
 
-.link-container {
-  width: 270px;
-  margin-right: 30px;
-  /* background-color: silver; */
-}
-.link-container .title {
-  margin-top: 0px;
-}
-.link-list {
-  margin: 0px;
-  display: flex;
-  padding-left: 0px;
-  justify-content: center;
-  padding-bottom: 24px;
-  list-style: none;
-}
-
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -398,7 +381,6 @@ img {
 .container-cust .item {
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
-
   height: 90px;
 }
 .item-cust {
@@ -451,6 +433,23 @@ address {
 address .link {
   display: inline-block;
   margin-top: 9px;
+}
+
+.link-container {
+  width: 270px;
+  margin-right: 30px;
+  /* background-color: silver; */
+}
+.link-container .title {
+  margin-top: 0px;
+}
+.link-list {
+  margin: 0px;
+  display: flex;
+  padding-left: 0px;
+  justify-content: center;
+  padding-bottom: 24px;
+  list-style: none;
 }
 
 footer .link {
@@ -511,22 +510,30 @@ footer .title {
   padding-top: 93px;
   padding-bottom: 94px;
 }
+.filter-section {
+  padding-bottom: 50px;
+}
+.project-section {
+  padding-top: 0px;
+}
 .button.filter {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   padding: 6px 22px;
 }
+.button.filter:hover,
+.button.filter:focus {
+  background-color: var(--accent-color);
+  color: #eeeeee;
+}
 .filter {
   display: flex;
-  padding-top: 0px;
+  /* padding-top: 0px; */
   justify-content: center;
 }
 
 .filter .item + .item {
   margin-left: 8px;
-}
-.filter.list {
-  margin-bottom: 34px;
 }
 
 .card .link {
@@ -557,20 +564,27 @@ footer .title {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
 .card {
   display: flex;
   flex-wrap: wrap;
 }
-.card .card-list {
+.card-list {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  /* outline: 2px solid green; */
 }
 .card .card-list:nth-child(3n) {
   margin-right: 0px;
-  margin-bottom: 0px;
+}
+
+.card-list:hover,
+.card-list:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-name {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
