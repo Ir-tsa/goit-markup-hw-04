@@ -178,8 +178,8 @@ a.link {
   max-width: 1600px;
   height: 600px;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/header-img.jpg);
   /* background-size: contain;
@@ -324,6 +324,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
   /* background-color: steelblue; */
 }
 
@@ -358,7 +359,7 @@ img {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: #f5f4fa;
+  background: #ffffff;
   border-radius: 50%;
 }
 .social-icon {
